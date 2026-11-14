@@ -35,11 +35,11 @@ src/
 │   │   ├── ScopeAndNameResolver/
 │   │   ├── TypeChecker/
 │   │   └── Utils/
-│   ├── Lowering/ 
-│   │   ├── ToCore/             # Typed AST (surface syntax) to high-level IR
-│   │   └── CoreToDSL/          # High-level IR to low-level IR
+│   ├── Lowering/               # Translating between program representations
+│   │   ├── ToCore/             # - typed AST (surface syntax) to high-level IR
+│   │   └── CoreToDSL/          # - high-level IR to low-level IR
 │   ├── Backend/                # Output code generation
-│   │   └── OpenQASM3/
+│   │   └── OpenQASM3/          #  - low level IR to OpenQasm 3  
 │   └── Exporter/               # Low level IR to Lean exporter
 ├── Leaf.idr                    # REPL entry point
 └── Main.idr                    # Command-line entry point
